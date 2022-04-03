@@ -1,38 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.DocContainer{
   display: flex;
-  flex-direction: column;
+}
+
+.DropBox{
+  background-color: aquamarine;
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+  height: 300px;
+  border: 1px solid black;
+  max-width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  margin-bottom: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.Document{
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  background-color: coral;
+  padding: 20px;
+  border: 1px solid black;
+  width: 500px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Document, h4, p{
+  margin-top: 8px;
 }
+
+.Document h4{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.Document p{
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: black;
+}
+
+.DocumentsContainer{
+  margin-bottom: 150px;
+}
+
+.Button{
+  margin-top: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: aquamarine;
+  margin-right: 10px;
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: none;
+}
+.UpdateContainer{
+
+}
+
+.UpdateContainerForm{
+  min-height: 170px;
+  max-width: 400px;
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 50px
+}
+
+.UpdateContainerForm h3{
+  margin: 15px 10px;
+  color: black;
+}
+
+.UpdateContainerForm label{
+  color: black;
+  font-weight: 700;
+}
+
+.UpdateButton{
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
+  justify-self: end;
+}
+
+.Form{
+  min-height: 170px;
+  max-width: 400px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 50px;
+
+}
+
+.InputField label{
+  font-size: 20px;
+  margin-top: 15px;
+
+  margin-bottom: 15px;
+}
+
+.InputField input {
+  width: 100%;
+  height: 40px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.InputField{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ButtonContainer{
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  height: 50px;
+  background-color: coral;
+  margin-top: 20px;
+  justify-self: end;
+}
+
+.UserProfile{
+  color:white;
+}
+
